@@ -1,0 +1,167 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	font-family: Montserrat, Arial, sans-serif
+	background: #ececec
+	color: #222
+
+img
+	display: block
+	max-width: 100%
+
+a
+	text-decoration: none
+
+ul
+	list-style: none
+
+// /* Контейнер	*/
+
+.container
+	max-width: 1140px
+	width: 100%
+	margin: 0 auto
+	padding: 0 15px
+
+.main-page
+	padding-top: 20px
+
+// /* Хедер */
+
+	&__header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 25px
+
+	&__logo img
+		width: 70px
+
+	&__search-box
+		flex-grow: 1
+		margin: 0 50px
+		border: none
+		border-radius: 2px
+		border-color: rgba(34, 119, 170, 100)
+
+	&__search-input
+		width: 220px
+		height: 34px
+		border: 1px solid #bdbdbd
+		border-radius: 5px
+		padding-left: 12px
+		outline: none
+
+	&__top-menu
+		display: flex
+
+	&__top-menu-item
+		color: #222
+		font-size: 16px
+		margin-right: 48px
+		margin-left: 3px
+
+	&__top-menu-item:hover
+		color: #2b7db5
+
+// /* Нав-меню */
+
+	&__navigation
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 40px
+
+.navigation__list
+	display: flex
+	background: #2b7db5
+	border-radius: 8px
+	overflow: hidden
+
+	&-item a
+		display: block
+		color: white
+		padding: 14px 28px
+
+.navigation__city
+	font-size: 16px
+	font-weight: 500
+
+// /* О компании */
+
+.info
+	padding: 0 120px
+
+	&__title
+		font-size: 64px
+		font-weight: 400
+		margin-bottom: 60px
+
+	&__content
+		max-width: 850px
+
+	&__content p
+		font-size: 20px
+		line-height: 1.5
+		margin-bottom: 45px
+		font-weight: 500
+
+// /* Футер*/
+
+.footer
+	background: #22272d
+	color: #fff
+	padding-top: 60px
+
+	&__top
+		display: flex
+		justify-content: space-between
+		gap: 50px
+		padding-bottom: 50px
+
+	&__column
+		flex: 1
+
+	&__logo
+		width: 70px
+		margin-bottom: 20px
+
+	&__company
+		font-size: 24px
+		font-weight: 700
+		margin-bottom: 10px
+
+	&__title
+		font-size: 18px
+		margin-bottom: 20px
+
+	&-list__item
+		margin-bottom: 12px
+
+	&-list__item a
+		color: #d8d8d8
+		transition: .3s
+
+	&__contact
+		margin-bottom: 12px
+		color: #d8d8d8
+
+	&__bottom
+		border-top: 1px solid rgba(255,255,255,.15)
+		padding: 25px 0
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		gap: 24px
+
+	&__bottom-text
+		color: #bcbcbc
+		font-size: 14px
+		cursor: pointer
+		transition: .3s
+
+	&__bottom-text:hover
+		color: #fff
